@@ -1,0 +1,1 @@
+Copy a ‘access.log’ file into HDFS under /logs directory. And then using the access.log file stored in HDFS, implement MapReduce to find the number of times each IP accessed the website.
