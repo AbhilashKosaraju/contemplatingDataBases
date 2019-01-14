@@ -1,6 +1,7 @@
 @echo off
+rem This is a windows batch file to import the entire NYSE dataset
 setlocal 
-CD "C:\Users\sowjanya\Desktop\Abhi\NYSE_daily_prices"
+CD "C:\Users\user\NYSE_daily_prices"
 for /r %%i in (*.csv) do ( 
   call :process_file %%i
   )
