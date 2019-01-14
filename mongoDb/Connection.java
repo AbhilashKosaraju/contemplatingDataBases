@@ -1,5 +1,11 @@
 package MongoDb;
 
+/*
+Write a Java (could be a console app - will only run once to import the data into MongoDB) program to read the file, and insert into 3 different
+collections (movies, ratings, tags).
+
+Once the data are inserted into MongoDB, enable user operations on the data. Such as, the user might search the movies by title, or another keyword, and then display the results.  
+*/
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -28,7 +34,7 @@ public class Connection {
 	    System.out.println("Enter the movie title or any keyword");
 	    
 	    try {
-            File inputFile = new File("C:\\Users\\sowjanya\\Desktop\\Abhi\\BigData\\ml-latest-small\\", "movies.csv");
+            File inputFile = new File("Here:\\Enter\\the\\location\\of\\the\\file\\", "movies.csv");
 
             BufferedReader in = new BufferedReader(new FileReader(inputFile));
             String line;
@@ -51,7 +57,7 @@ public class Connection {
                 System.out.println("FileNotFoundException: " + ex.getMessage());
             }
 	    try {
-            File inputFile = new File("C:\\Users\\sowjanya\\Desktop\\Abhi\\BigData\\ml-latest-small\\", "tags.csv");
+            File inputFile = new File("Here:\\Enter\\the\\location\\of\\the\\file\\", "tags.csv");
 
             BufferedReader in = new BufferedReader(new FileReader(inputFile));
             String line;
@@ -76,7 +82,7 @@ public class Connection {
                 System.out.println("FileNotFoundException: " + ex.getMessage());
             }
 	    try {
-            File inputFile = new File("C:\\Users\\sowjanya\\Desktop\\Abhi\\BigData\\ml-latest-small\\", "ratings.csv");
+            File inputFile = new File("Here:\\Enter\\the\\location\\of\\the\\file\\", "ratings.csv");
 
             BufferedReader in = new BufferedReader(new FileReader(inputFile));
             String line;
